@@ -84,12 +84,12 @@ void PrintCard(int cardValue)
     string card = cardValue switch
     {
         10 => Random.Shared.Next(1, 5) switch
-        {
-            1 => "10",
-            2 => "Jack",
-            3 => "Queen",
-            _ => "King"
-        },
+            {
+                1 => "10",
+                2 => "Jack",
+                3 => "Queen",
+                _ => "King"
+            },
         11 => "Ace",
         _ => cardValue.ToString()
     };
